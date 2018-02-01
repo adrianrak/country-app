@@ -26,6 +26,7 @@ class ContinentsContainer extends Component {
                 <select onChange={e => this.chooseContinent(e)}>
                     <option value="Europa">Europa</option>
                     <option value="Afryka">Afryka</option>
+                    <option value="Ameryka Południowa">Ameryka Południowa</option>
                 </select>
                 <CountryFlagList countries={this.props.visibleCountries} deleteCountry={this.deleteCountry.bind(this)} />
             </div>

@@ -6,7 +6,8 @@ import reducers from '../reducers/index';
 const logger = createLogger();
 const store = createStore(
   reducers,
-  applyMiddleware(logger)
+  applyMiddleware(logger),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 export default store;

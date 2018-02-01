@@ -46,4 +46,172 @@
     "continent": "Afryka",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/900px-Flag_of_Algeria.svg.png",
     "id": 6
+  }, {
+    "name": "Francja",
+    "currency" : "EUR",
+    "populace": "67.1",
+    "capital": "Paryż",
+    "continent": "Europa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg",
+    "id": 7
+  }, {
+    "name": "Niemcy",
+    "currency" : "EUR",
+    "populace": "82.3",
+    "capital": "Berlin",
+    "continent": "Europa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg",
+    "id": 8
+  }, {
+    "name": "Hiszpania",
+    "currency" : "EUR",
+    "populace": "48.6",
+    "capital": "Madryt",
+    "continent": "Europa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg",
+    "id": 9
+  }, {
+    "name": "Austria",
+    "currency" : "EUR",
+    "populace": "8.8",
+    "capital": "Wiedeń",
+    "continent": "Europa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg",
+    "id": 10
+  }, {
+    "name": "Portugalia",
+    "currency" : "EUR",
+    "populace": "10.8",
+    "capital": "Lizbona",
+    "continent": "Europa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
+    "id": 11
+  }, {
+    "name": "Szwajcaria",
+    "currency" : "CHF",
+    "populace": "10.8",
+    "capital": "Berno",
+    "continent": "Europa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg",
+    "id": 12
+  }, {
+    "name": "Ukraina",
+    "currency" : "UAH",
+    "populace": "42.8",
+    "capital": "Kijów",
+    "continent": "Europa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
+    "id": 13
+  }, {
+    "name": "Tanzania",
+    "currency" : "TZS",
+    "populace": "54",
+    "capital": "Dodoma",
+    "continent": "Afryka",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg",
+    "id": 14
+  }, {
+    "name": "Zimbabwe",
+    "currency" : "USD",
+    "populace": "13.8",
+    "capital": "Harare",
+    "continent": "Afryka",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg",
+    "id": 15
+  }, {
+    "name": "Kamerun",
+    "currency" : "CFA",
+    "populace": "25",
+    "capital": "Jaunde",
+    "continent": "Afryka",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg",
+    "id": 16
+  }, {
+    "name": "Egipt",
+    "currency" : "EGP",
+    "populace": "97.1",
+    "capital": "Kair",
+    "continent": "Afryka",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
+    "id": 17
+  }, {
+    "name": "Argentyna",
+    "currency" : "ARS",
+    "populace": "44.3",
+    "capital": "Buenos Aires",
+    "continent": "Ameryka Południowa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
+    "id": 18
+  }, {
+    "name": "Boliwia",
+    "currency" : "BOB",
+    "populace": "11.1",
+    "capital": "Sucre",
+    "continent": "Ameryka Południowa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg",
+    "id": 19
+  }, {
+    "name": "Brazylia",
+    "currency" : "BRL",
+    "populace": "207.3",
+    "capital": "Brasilia",
+    "continent": "Ameryka Południowa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg",
+    "id": 20
+  }, {
+    "name": "Chile",
+    "currency" : "CLP",
+    "populace": "17.8",
+    "capital": "Santiago",
+    "continent": "Ameryka Południowa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg",
+    "id": 21
+  }, {
+    "name": "Ekwador",
+    "currency" : "USD",
+    "populace": "16.3",
+    "capital": "Quito",
+    "continent": "Ameryka Południowa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg",
+    "id": 22
+  }, {
+    "name": "Kolumbia",
+    "currency" : "COP",
+    "populace": "47.7",
+    "capital": "Bogota",
+    "continent": "Ameryka Południowa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg",
+    "id": 23
+  }, {
+    "name": "Paragwaj",
+    "currency" : "ARS",
+    "populace": "7",
+    "capital": "Asunción",
+    "continent": "Ameryka Południowa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg",
+    "id": 24
+  }, {
+    "name": "Peru",
+    "currency" : "PEN",
+    "populace": "31",
+    "capital": "Lima",
+    "continent": "Ameryka Południowa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_Peru_%28state%29.svg",
+    "id": 25
+  }, {
+    "name": "Urugwaj",
+    "currency" : "UYU",
+    "populace": "3.4",
+    "capital": "Montevideo",
+    "continent": "Ameryka Południowa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg",
+    "id": 26
+  }, {
+    "name": "Wenezuela",
+    "currency" : "VEF",
+    "populace": "31.3",
+    "capital": "Caracas",
+    "continent": "Ameryka Południowa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_Venezuela_%28state%29.svg",
+    "id": 27
   }]
