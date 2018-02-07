@@ -6,9 +6,6 @@ import { getCountries, searchCountries, deleteCountry, setPerPage, setCurrentPag
 class CountryFlagContainer extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            page: 0
-        };
     }
 
     componentDidMount() {
@@ -28,7 +25,6 @@ class CountryFlagContainer extends Component {
     itemsPerPageChanges(event) {
         this.props.dispatch(setPerPage(event.target.value));
         this.props.dispatch(setCurrentPage(1));
-        this.setState({page: 0});
     }
 
     changePage(perPage) {
@@ -43,7 +39,6 @@ class CountryFlagContainer extends Component {
         const page = (number - 1) * this.props.countriesPerPage;
 
         this.props.dispatch(setCurrentPage(number));
-        this.setState({page});
     }
 
     render() {
@@ -77,7 +72,7 @@ class CountryFlagContainer extends Component {
                     per page
                 </div>
                 <Pagination pages={this.changePage(this.props.countriesPerPage)} currentPage={this.props.currentPage} changeCurrentPage={(number) => this.changeCurrentPage(number)}/>
-                <CountryFlagList countries={this.props.visibleCountries.slice(this.state.page, this.state.page + this.props.countriesPerPage)} deleteCountry={this.deleteCountry.bind(this)} />
+                <CountryFlagList countries={this.props.visibleCountries.slice(this.props.currentPage, this.props.currentPage + this.props.countriesPerPage)} deleteCountry={this.deleteCountry.bind(this)} />
             </div>
         )
     }
