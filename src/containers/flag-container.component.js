@@ -59,7 +59,7 @@ class CountryFlagContainer extends Component {
         return (
             <div>
                 <div className="search text-center">
-                    <input type="text" onChange={this.search.bind(this)}/>
+                    <input type="text" onChange={e => this.search(e)}/>
                 </div>
                 <div>
                     Show 

@@ -6,7 +6,7 @@ const initialState = {
     selectedCountry: {},
     visibleCountries: [],
     countriesPerPage: [],
-    currentPage: 1
+    currentPage: 0
 };
 
 const countriesReducer = function (state = initialState, action) {
