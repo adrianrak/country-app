@@ -16,6 +16,7 @@ class CountryFlagContainer extends Component {
 
     search(event) {
         this.props.dispatch(searchCountries(event.target.value));
+         this.props.dispatch(setCurrentPage(this.props.currentPage));
     }
 
     deleteCountry(id) {
@@ -25,6 +26,8 @@ class CountryFlagContainer extends Component {
     itemsPerPageChanges(event) {
         this.props.dispatch(setPerPage(event.target.value));
         this.props.dispatch(setCurrentPage(1));
+        this.props.dispatch(setCurrentPage(this.props.currentPage));
+        
     }
 
     changePage(perPage) {
@@ -36,9 +39,8 @@ class CountryFlagContainer extends Component {
     }
 
     changeCurrentPage(number) {
-        const page = (number - 1) * this.props.countriesPerPage;
+        this.props.dispatch(setCurrentPage((number - 1) * this.props.countriesPerPage));
 
-        this.props.dispatch(setCurrentPage(number));
     }
 
     render() {
@@ -47,7 +49,7 @@ class CountryFlagContainer extends Component {
                 <ul className="pagination">
                     {props.pages.map(number => {
                         return (
-                            <li key={number} onClick={() => props.changeCurrentPage(number)} className={ number === props.currentPage ? 'active' : '' }>
+                            <li key={number} onClick={() => props.changeCurrentPage(number)} className={ (number - 1) * this.props.countriesPerPage === props.currentPage ? 'active' : '' }>
                                 <a>{number}</a>
                             </li>
                         );
