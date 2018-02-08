@@ -16,7 +16,7 @@ class CountryFlagContainer extends Component {
 
     search(event) {
         this.props.dispatch(searchCountries(event.target.value));
-         this.props.dispatch(setCurrentPage(this.props.currentPage));
+        this.props.dispatch(setCurrentPage(0));
     }
 
     deleteCountry(id) {
@@ -26,7 +26,7 @@ class CountryFlagContainer extends Component {
     itemsPerPageChanges(event) {
         this.props.dispatch(setPerPage(event.target.value));
         this.props.dispatch(setCurrentPage(1));
-        this.props.dispatch(setCurrentPage(this.props.currentPage));
+        this.props.dispatch(setCurrentPage(0));
         
     }
 
@@ -39,7 +39,7 @@ class CountryFlagContainer extends Component {
     }
 
     changeCurrentPage(number) {
-        this.props.dispatch(setCurrentPage((number - 1) * this.props.countriesPerPage));
+        this.props.dispatch(setCurrentPage(number - 1));
 
     }
 
@@ -49,7 +49,7 @@ class CountryFlagContainer extends Component {
                 <ul className="pagination">
                     {props.pages.map(number => {
                         return (
-                            <li key={number} onClick={() => props.changeCurrentPage(number)} className={ (number - 1) * this.props.countriesPerPage === props.currentPage ? 'active' : '' }>
+                            <li key={number} onClick={() => props.changeCurrentPage(number)} className={ (number - 1) === props.currentPage ? 'active' : '' }>
                                 <a>{number}</a>
                             </li>
                         );
@@ -57,7 +57,7 @@ class CountryFlagContainer extends Component {
                 </ul>
             </nav>
         );
-
+        const fromIndex = this.props.currentPage * this.props.countriesPerPage;
         return (
             <div>
                 <div className="search text-center">
@@ -74,7 +74,7 @@ class CountryFlagContainer extends Component {
                     per page
                 </div>
                 <Pagination pages={this.changePage(this.props.countriesPerPage)} currentPage={this.props.currentPage} changeCurrentPage={(number) => this.changeCurrentPage(number)}/>
-                <CountryFlagList countries={this.props.visibleCountries.slice(this.props.currentPage, this.props.currentPage + this.props.countriesPerPage)} deleteCountry={this.deleteCountry.bind(this)} />
+                <CountryFlagList countries={this.props.visibleCountries.slice(fromIndex, fromIndex + this.props.countriesPerPage)} deleteCountry={this.deleteCountry.bind(this)} />
             </div>
         )
     }
